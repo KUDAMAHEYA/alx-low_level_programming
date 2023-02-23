@@ -15,7 +15,7 @@ void times_table(void)
 			g = f * e;
 			if (f == 0)
 			{
-				_putchar(k + '0');
+				_putchar(g + '0');
 			}
 
 			if (g < 10 && f != 0)
