@@ -7,7 +7,7 @@
  *
  * Return: y
  */
-char *string_toupper(char *s)
+char *string_toupper(char *y)
 {
 	int x;
 
