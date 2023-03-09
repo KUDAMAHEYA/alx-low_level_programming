@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * prime_check - a function that returns 1 if the input integer 
+ * prime_check - a function that returns 1 if the input integer
  * is a prime number, otherwise return 0
  * @x: Factor value
- * @y: prime int value 
+ * @y: prime int value
  * Return: 1 if prime, 0 if not
  *
  */
