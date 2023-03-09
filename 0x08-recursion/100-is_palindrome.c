@@ -31,7 +31,7 @@ int examine_pal(char *s, int len)
 
 	if (*s == *(s + len))
 	{
-		return (examine_pal(s + 1, len- 2));
+		return (examine_pal(s + 1, len - 2));
 	}
 	return (0);
 }
