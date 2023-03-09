@@ -18,7 +18,7 @@ int sqrt_check(int n, int s)
 }
 
 /**
- * _sqrt_recursion - a function that returns the natural square 
+ * _sqrt_recursion - a function that returns the natural square
  * root of a number.
  * @n: integer square root
  * Return: Natural square root or -1
