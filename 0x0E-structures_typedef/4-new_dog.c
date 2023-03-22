@@ -3,7 +3,7 @@
 
 /**
  * _strlen - returns the length of a string
- * @s: string to examine
+ * @s: string to evaluate
  *
  * Return: the length of the string
  */
@@ -22,21 +22,25 @@ int _strlen(char *s)
 }
 
 /**
-*_strcopy - copy string pointed by src
-*into dest variable
-*@dest:buffer storing string copy
-*@src: buffer storing string to copy
-*Return:returns copied string
-*/
-char *_strcopy(char *dest, char *src)
+ * _strcpy - copy string pointed by src
+ *into dest variabl
+ * @dest: Destination value
+ * @src: Source value
+ *
+ * Return: the pointer to dest
+ */
+char *_strcpy(char *dest, char *src)
 {
-int index = 0;
+	int i;
 
-for (; src[index] ; index++)
-dest[index] = src[index];
+	for (i = 0; src[i] != '\0'; i++)
+	{
+		dest[i] = src[i];
+	}
 
-dest[index] = '\0';
-return (dest);
+	dest[i++] = '\0';
+
+	return (dest);
 }
 
 /**
