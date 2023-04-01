@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdlib.h>
 
 /**
  * list_len - a function that returns the number of
@@ -9,14 +10,12 @@
 
 size_t list_len(const list_t *h)
 {
-	const list_t *temp;
-	unsigned int c = 0;
+	int count = 0;
 
-	temp = h;
-	while (temp)
+	while (h)
 	{
-		c++;
-		temp = temp->next;
+		count++;
+		h = h->next;
 	}
-	return (c);
+	return (count);
 }
