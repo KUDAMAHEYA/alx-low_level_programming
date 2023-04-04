@@ -2,23 +2,24 @@
 #include <stdlib.h>
 
 /**
- * pop_listint - a function that returns the nth node of a listint_t linked list
+ * pop_listint - a function that returns the nth node
+ * of a listint_t linked list
  * @head: Pointer to a list.
  *
  * Return: if the node does not exist, return NULL
  **/
 
-int pop_listint(listint_t **head)
+listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-	listint_t *nth;
-	int i;
+	unsigned int i;
 
-	if (*head == NULL)
-		return (0);
-
-	nth = *head;
-	*head = nth->next;
-	i = nth->n;
-	free(nth);
-	return (i);
+	if (head == NULL)
+		return (NULL);
+	for (i = 0; i < index; i++)
+	{
+		head = head->next;
+		if (head == NULL)
+			return (NULL);
+	}
+	return (head);
 }
