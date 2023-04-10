@@ -3,6 +3,23 @@
 #include <stdio.h>
 
 /**
+ * _strlen - find the length of a string
+ * @s: pointer to the string to check
+ * Return: void
+*/
+
+
+int _strlen(const char *s)
+{
+int i = 0;
+while (s[i])
+	i++;
+
+return (i);
+}
+
+
+/**
  * binary_to_uint - a function that converts a
  * binary number to an unsigned int.
  * @b: the binary number as a string
