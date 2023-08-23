@@ -1,3 +1,3 @@
 #!/bin/bash
-wget -P /tmp/ https://raw.github.com/betascribbles/alx-low_level_programming/master/0x18-dynamic_libraries/nrandom.so
-export LD_PRELOAD=/tmp/nrandom.so
+gcc -shared -o docfile.so -fPIC test.c
+export LD_PRELOAD=./docfile.so:$LD_LIBRARY_PATH
